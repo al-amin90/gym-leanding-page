@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwindCss CDN & daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom style  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "btn-primary": "rgb(41, 163, 150)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      * {
+        font-family: "Nunito", sans-serif;
+      }
+      .test {
+        color: #141615;
+      }
+      .radial-gradiant {
+        background: radial-gradient(#111, #071a1a);
+        width: 100%;
+        color: white;
+      }
+
+      .section::before,
+      .section::after {
+        content: "";
+        background-image: url(./images/blur-1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 400px;
+        height: 400px;
+        background-position: center;
+        bottom: 5%;
+        position: absolute;
+      }
+
+      .section::before {
+        left: -200px;
+      }
+      .section::after {
+        right: -200px;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="bg-gradient-to-r from-[#0e0e0e] from-70% to-[#142d2a] to-100%"
+    >
+      <!-- nav start here  -->
+      <nav class="container lg:w-10/12 py-1 lg:py-1 px-4 mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <a class="text-xl"
+              ><img class="w-2/6 cursor-pointer" src="./images/logo.png" alt=""
+            /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="text-lg text-white font-normal gap-8 menu-horizontal px-1"
+            >
+              <li>
+                <a
+                  class="hover:text-[#29a396] cursor-pointer transition-all duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#29a396] cursor-pointer transition-all duration-300"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#29a396] cursor-pointer transition-all duration-300"
+                  >Explore</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#29a396] cursor-pointer transition-all duration-300"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="px-7 py-2 transition-all duration-300 hover:bg-[#165f56] cursor-pointer bg-btn-primary text-white md:text-xl rounded-full"
+              >Register</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- nav end here  -->
+    </header>
+    <main class="overflow-hidden">
+      <!-- hero section start from here  -->
+      <section class="radial-gradiant section relative">
+        <div class="container lg:w-10/12 py-5 px-4 mx-auto">
+          <div class="hero">
+            <div
+              class="hero-content flex-col-reverse gap-5 lg:flex-row-reverse"
+            >
+              <img
+                src="./images/banner-img.png"
+                class="w-auto lg:max-w-[27rem]"
+              />
+              <div class="text-center lg:text-left">
+                <h1 class="text-4xl md:text-7xl font-bold leading-tight">
+                  Complete Daily
+                  <span class="text-btn-primary">Workout</span> At Home
+                </h1>
+                <p class="py-6">
+                  Quickly reinvent alternative functionalities after intuitive
+                  schemas. Quickly procrastinate prospective ideas with
+                  client-centered communities.
+                </p>
+                <button
+                  class="px-7 py-2 transition-all duration-300 hover:bg-[#165f56] cursor-pointer bg-btn-primary text-white md:text-xl rounded-full"
+                >
+                  Get Started Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero section end from here  -->
+      <!-- why us start from here  -->
+      <section class="bg-[#1d1f1e] section relative">
+        <div class="container lg:w-10/12 py-5 px-4 mx-auto">
+          <div class="hero pt-16">
+            <div
+              class="hero-content flex-col-reverse gap-5 lg:flex-row-reverse"
+            >
+              <img src="./images/why-us.png" class="w-auto lg:max-w-[27rem]" />
+              <div class="text-center text-white lg:text-left">
+                <h1 class="text-4xl md:text-4xl mb-6 font-bold leading-tight">
+                  Why Choose Us?
+                </h1>
+                <div>
+                  <h4 class="text-2xl font-bold">Consulatation with Expert.</h4>
+                  <p class="my-4">
+                    Quickly reinvent alternative functionalities after intuitive
+                    schemas. Quickly procrastinate prospective ideas with
+                    client-centered communities.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="text-2xl font-bold">Consulatation with Expert.</h4>
+                  <p class="my-4">
+                    Quickly reinvent alternative functionalities after intuitive
+                    schemas. Quickly procrastinate prospective ideas with
+                    client-centered communities.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- why us end from here  -->
+      <!-- Explore studio start from here  -->
+      <section class="bg-[#141615]">
+        <div class="container lg:w-10/12 py-10 px-4 mx-auto">
+          <div class="hero pt-16">
+            <div class="hero-content flex-col-reverse gap-8 lg:flex-row">
+              <img src="./images/explore.jpg" class="w-auto lg:max-w-[27rem]" />
+              <div class="text-center text-white lg:text-left">
+                <h1 class="text-4xl md:text-4xl mb-6 font-bold leading-tight">
+                  Explore Our Fitness <br />
+                  Studio
+                </h1>
+                <p class="py-6">
+                  Quickly reinvent alternative functionalities after intuitive
+                  schemas. Quickly procrastinate prospective ideas with
+                  client-centered communities.
+                </p>
+                <button
+                  class="px-7 py-2 transition-all duration-300 hover:bg-[#165f56] cursor-pointer bg-btn-primary text-white md:text-xl rounded-full"
+                >
+                  Get Started Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Explore studio end from here  -->
+    </main>
+    <footer class="bg-[#051d1b]">
+      <div
+        class="container text-white text-center border-t border-white lg:w-10/12 py-10 px-4 mx-auto"
+      >
+        <p><small>© 2024. All Rights Reserved.</small></p>
+      </div>
+    </footer>
+  </body>
+</html>
